@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopNow Express</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <header>
+    <div class="logo">ShopNow Express</div>
 
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+    </button>
+
+    <nav id="navMenu">
+      <a href="#">Inicio</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#vende">Vende con nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="btn btn-nav">Registrarme</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Compra todo en un solo lugar</h1>
+      <p>Rápido, seguro y desde cualquier dispositivo</p>
+      <a href="#contacto" class="btn">Regístrate ahora</a>
+    </section>
+
+    <section id="categorias">
+      <h2>Categorías destacadas</h2>
+      <div class="categorias-grid">
+        <div class="categoria">
+          <img src="https://via.placeholder.com/80" alt="Categoría Tecnología" width="80" height="80" />
+          <p>Tecnología</p>
+        </div>
+        <div class="categoria">
+          <img src="https://via.placeholder.com/80" alt="Categoría Moda" width="80" height="80" />
+          <p>Moda</p>
+        </div>
+        <div class="categoria">
+          <img src="https://via.placeholder.com/80" alt="Categoría Hogar" width="80" height="80" />
+          <p>Hogar</p>
+        </div>
+        <div class="categoria">
+          <img src="https://via.placeholder.com/80" alt="Categoría Belleza" width="80" height="80" />
+          <p>Belleza</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <h2>Promoción del mes</h2>
+      <p>Hasta 30% de descuento en tecnología</p>
+    </section>
+
+    <section id="vende">
+      <h2>Vende con nosotros</h2>
+      <p>¿Eres emprendedor o tienes un negocio? Publica tus productos sin tienda física.</p>
+      <a href="#contacto" class="btn">Quiero vender</a>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form id="form-contacto" novalidate>
+        <input type="text" id="nombre" placeholder="Nombre" required />
+        <input type="email" id="correo" placeholder="Correo electrónico" required />
+ <input type="password" id="password" placeholder="Contraseña" required />
+ <small>Mínimo 8 caracteres y una mayúscula.</small>
+ <button type="submit">Enviar</button>
+ </form>
+ <p id="mensaje"></p>
+ </section>
+</main>
+
+<footer>
+<p>2026 ShopNow Express - Todos los derechos reservados</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
