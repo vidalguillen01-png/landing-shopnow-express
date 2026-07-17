@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #002060;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  background: #F4A259;
+  color: #222;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-nav {
+  padding: 8px 16px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  background: #F5F8FA;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Secciones generales */
+section {
+  padding: 40px 24px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* HU01: categorías con imagen y nombre */
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.categoria {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.categoria img {
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 4px;
+}
+
+/* Promoción */
+.promo {
+  background: #FFF3E0;
+  text-align: center;
+}
+
+/* Vende con nosotros */
+#vende {
+  text-align: center;
+}
+
+#vende p {
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+/* HU03: formulario */
+#contacto {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form small {
+  color: #666;
+  margin-top: -6px;
+}
+
+form button {
+  margin-top: 8px;
+}
+
+#mensaje {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+#mensaje.error { color: #C62828; }
+#mensaje.exito { color: #2E7D32; }
+
+/* Footer */
+footer {
+  background: #002060;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+/* HU04: diseño responsive para tablet y móvil */
+@media (max-width: 768px) {
+  .categorias-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #002060;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px;
+    gap: 16px;
+  }
+
+  nav.abierto 
+{
+    display: flex;
+  }
+
+  .categorias-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
