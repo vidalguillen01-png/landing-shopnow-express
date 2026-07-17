@@ -203,8 +203,7 @@ padding: 16px 24px;
 gap: 16px;
 }
 
-nav.abierto 
-{
+nav.abierto {
 display: flex;
 }
 
